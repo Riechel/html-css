@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixa 01</title>
+    <style>
+        h1{/*box-level*/
+           
+            background-color: bisque;
+            height: 300px;
+            width: 425px;
+            /*
+            border-width:10px;
+            border-style: solid;
+            border-color: brown;
+            
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left:10px;
+            obs: sendo todas igais so informa uma
+            sendo duas iguais e duas diferente so informa duas
+            todas diferente informa tds
+
+            margin: auto;
+            margin-top:30px;
+            margin-bottom: 70px;
+
+            outline-width:30px;
+            outline-style:dashed;
+            outline-color:blue;
+            */
+            
+            padding:10px;
+            margin:150px 100px 120px 100px;
+
+            border:15px solid brown; 
+            outline:30px dashed blue;
+        }
+       
+        
+        a{/*Box-inline (obs caso queria mudar e so configurar como) display: block*/
+            border: 15px groove rgb(69, 238, 69);
+
+            padding: 15px;
+            
+            margin:70px 10px 30px 10px;
+           
+        }
+     a .jack{
+            color: aqua;
+        }
+         .menu ul li{
+            background-color: black;
+            color: aliceblue;
+            float:left;
+            width: 120px;
+            font-size: 2em;
+            height: 40px;
+            display: block;
+            margin-top: -10px;
+            text-align: center;
+            line-height: 40px;
+           
+            }
+            .menu ul li > ul {
+                display: none;
+            }
+            .menu ul li:hover > ul {
+                display: block;
+            }
+            .menu ul li:hover{
+                background-color: darkred;
+            }
+            .menu ul li > ul > li{
+                font-size: 18px;
+                width:100px;
+                height:40px;
+               ;
+
+              
+
+            }
+            
+            .menu ul{
+                padding:0;
+                
+            } 
+            .menu ul li ul li:hover{
+                background-color: blue;
+            }
+        nav{
+            margin-left: 650px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Meu Trabalho</h2>
+        <nav class="menu">
+            <ul>
+                <li>Paulo 
+                    <ul>
+                        <li>Jackson<a href="jack.jpg"></a></li>
+                        <li>Jacqueline</li>
+                    </ul>
+                </li>
+                <li>Tânia</li>
+                <li>Angela</li>
+                <li>Elza</li>
+                
+            </ul>
+        </nav>
+    </header>
+    <h1>Exemplo de caixa Box-Level</h1>
+    <p>Paragrafos tambem e um exemplo de Box-Level, <a href="">Links são exemplo de caixa inline-level</a>Vamos testar como isso funciona</p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 02</title>
+    <style>
+        .dia {
+            color:red;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p class="dia">
+            <label  for="iusu"></label> Usuario:</label>
+            <input  type="text" name="usu" id="isus" required minlength="3"maxlength="25" size="15" placeholder="nome do animal" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen"></label> Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="6" maxlength="15" size="12" placeholder="digite a senha burro" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar" minlength="6">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

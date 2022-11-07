@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Tabela</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           ;
+        }
+        h1{
+            font-size: 2em;
+            color: crimson;
+        }
+        caption{
+            font-size: 1em;
+            color: blue;
+            font-weight: bold;
+            padding: 10px;
+           
+        }
+        table{
+            width: 500px;
+            padding: 10px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 3px;
+         
+        }
+        thead, tfoot{
+            background-color: rgb(166, 165, 158);
+            color:white;
+        }
+        thead >tr >th{
+            position: sticky;
+            top: -1px;
+            background-color:rgb(166, 165, 158);
+        }
+        .lugar{
+            text-align: right;
+        }   
+       tbody > tr:nth-child(odd){
+           background-color:darkgrey ;
+       }
+       tbody > tr:nth-child(even){
+           background-color:rgb(192, 245, 79) ;
+          font-weight: bolder;
+       }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas grandes</h1>
+    <!--Anatomia de tabelas grandes
+    Table
+        CAPTION
+        THead
+            TR, TD, TM
+        TBody
+            TR, TD, TM
+        TFoot
+            TR, TD, TM
+    -->
+    <Table>
+        <caption>População das unidades Federativas do Brasil</caption>
+        <thead>
+            <th scope="col">Estados Brasileiros</th>
+            <th scope="col" style:width:"60px;">População</th>
+            <th scope="col"= style:width:"30px;">%</th>
+        <Tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+                <td class="lugar">22%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.841.652</td>
+                <td class="lugar">2.8</td>
+            </tr>
+            <tr><td>Rio de Janeiro</td><td>17.257.921</td><td>09%</td></tr>
+            <tr><td>Curitiba</td><td>1.652.352</td><td class="lugar">0.8%</td></tr>
+        </Tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>210.000.000</strong></td>
+                <td>100%</td>
+            </tr>
+        </tfoot>
+    </Table>
+    
+</body>
+</html>

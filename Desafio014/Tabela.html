@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerciçios em Tabela</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid blueviolet;
+        }
+        th{
+            background-color: #99ff33;
+        }
+        th.lugar{
+            text-align: left;
+        }
+        td{
+            background-color: #00cc00;
+            color:red;
+        }
+        td.med{
+            background-color: blanchedalmond;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Novo teste de Tabela</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Area</th>
+                <th rowspan="2">Diciplina</th>
+                <th colspan="3">Notas</th>
+                <th rowspan="2">Média</th>
+               
+            </tr>
+            <tr>
+               <th>Nota 1 </th>
+               <th>Nota 2 </th>
+               
+            </tr>
+            
+            <tr>
+                <th rowspan="4">Exatas</th>
+                <td>Matematica</td>
+                <td>6.8</td>
+                <td>7.0</td>
+                <td colspan="2" class="med">6.9</td>
+                
+                
+            </tr>
+            <tr>
+                <td>fisica</td>
+                <td>6.2</td>
+                <td>7.0</td>
+                <td colspan="2" class="med">6.6</td>
+              
+               
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>4.0</td>
+                <td>3.8</td>
+                <td colspan="2"class="med" >3.9</td>
+            </tr>
+         
+            <tr>
+                <td>Biologia</td>
+                <td>8.2</td>
+                <td>6.8</td>
+                <td colspan="2" class="med">7.5</td>
+                <tr>
+                    <th colspan="6" class="lugar">Media de Exatas</th>
+                   
+                </tr>
+               <tr>
+                <th rowspan="2
+                ">Humanas</th>
+                <th>Historia</th>
+                <td>7.4</td>
+                <td>6.8</td>
+                <td colspan="2"class="med" >7.1</td>
+               </tr>
+               <tr>
+                <th>Geografia</th>
+                <td>5.5</td>
+                <td>6.5</td>
+                <td colspan="2"class="med" >6.0</td>
+               </tr>
+
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>

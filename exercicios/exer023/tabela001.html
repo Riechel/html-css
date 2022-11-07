@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width:500px;
+            border-collapse: collapse;
+            border: 5px solid red;
+        }
+        td{
+            border: 2px solid blue;
+            padding: 5px;
+        }
+        tr.cano{
+            background-color: aqua;
+        }
+        td.tela{
+            background-color: #99ff33 ;
+            color: #0000ff;
+        }
+        td.bela{
+            background-color: goldenrod;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Praticando Tabelas</h1>
+    <!--
+        Herarquias das tabelas(simples)
+        Table = Tabelas
+            Table Row = linhas da tabelas
+                Table Header = cabeçalhos da tabelas
+                Table Data = dados da tabela
+    
+-->
+<table>
+    <tr><!--Primeira linha-->
+        <td>A1 = paulo</td>
+        <td class="tela">B1 = João</td>
+        <td>C1 = Ana</td>
+        <td>D1 = Maria</td>
+    </tr>
+
+    <tr><!--Segunda linha-->
+        <td class="bela">A2</td>
+        <td>B2</td>
+        <td>C2 Femenino</td>
+        <td>D2</td>
+    </tr>
+
+    <tr class="cano"><!--terceira linha-->
+        <td>A3</td>
+        <td>B3 Masculino</td>
+        <td>C3</td>
+        <td>D3</td>
+    </tr>
+<!--  -->
+    <tr><!--Quarta linha-->
+        <td>A4 = Pera</td>
+        <td>B4  Laranja </td>
+        <td class="tela">C4 = Manga </td>
+        <td>D4 = banana </td>
+    </tr>
+</table>
+    
+</body>
+</html>

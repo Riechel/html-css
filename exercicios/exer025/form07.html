@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 07</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgba(240, 208, 169, 0.601);
+        }
+        textarea{
+            background-color: coral;
+            color: darkblue;
+
+        }
+        label.cor{
+            color: red;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+    <div>
+        <label for="iest">Estado</label><!--esta label e um elemento-->
+        <select name="estado" id="iest">
+
+            <option value="selectd">---Escolha---</option>
+            <optgroup label="Região Sudeste
+            ">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+        </optgroup>
+            <optgroup label="Região sul"><!-- este label e um atributo-->
+                <option value="PR">Parana</option> 
+                <option value="SC">Santa Catarina</option>
+                <option value="RG">Rio Grande doSul</option>
+            </optgroup>
+            <optgroup label="Região Nordeste">
+                <option value="CE">Ceara</option>
+                <option value="PB">Pernambuco</option>
+                <option value="SE">Sergipe</option>
+                <option value="AL">Alagoas</option>
+                <option value="PB">Paraiba</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </optgroup>
+        </select>
+    </div>
+    <div>
+        <label for="iprof">Profissão</label>
+        <input type="text" name="prof" id="iprof" list="lsprof">
+        <datalist id="lsprof">
+            <option value=" Adv = ">Advogado</option>
+            <option value="adm = ">Administrador</option>
+            <option>Pedreiro</option>
+            <option>Marcineiro</option>
+        </datalist>
+    </div>
+    <p>
+        <!-- OBS pra usar o textarea o method tem que ser POST-->
+        <label class="cor" for="img"><strong>Deixe sua Opinião AQUI</strong></label></br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</form>  
+</body>
+</html>
